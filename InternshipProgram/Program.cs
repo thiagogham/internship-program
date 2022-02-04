@@ -13,5 +13,10 @@ namespace InternshipProgram
         {
             throw new NotImplementedException();
         }
+
+        public static int Sum(int a, int b)
+        {
+            return a + b;// throw new NotImplementedException();
+        }
     }
 }
