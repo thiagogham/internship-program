@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace InternshipProgram.VeryEasy
 {
     public static class VeryEasyProgram
@@ -33,7 +34,17 @@ namespace InternshipProgram.VeryEasy
             throw new NotImplementedException();
         }
 
-        public static string FirstLastStringTest(string a)
+        public static string FirstLastCharacter(string a)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static string FormatDateYYYYDDMM(string date)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static double Average(int[] array)
         {
             throw new NotImplementedException();
         }

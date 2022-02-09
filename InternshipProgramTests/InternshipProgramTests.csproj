@@ -14,9 +14,11 @@
 
   <ItemGroup>
     <None Remove="VeryEasy\" />
+    <None Remove="Easy\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="VeryEasy\" />
+    <Folder Include="Easy\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\InternshipProgram\InternshipProgram.csproj" />

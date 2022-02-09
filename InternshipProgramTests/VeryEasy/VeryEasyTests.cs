@@ -4,7 +4,7 @@ using InternshipProgram.VeryEasy;
 namespace InternshipProgramTests.VeryEasy
 {
     [TestFixture]
-    public class Tests
+    public class VeryEasyTests
     {
         [Test]
         public void FixedTest()
@@ -62,6 +62,23 @@ namespace InternshipProgramTests.VeryEasy
             Assert.AreEqual("fa", VeryEasyProgram.FirstLastCharacter("forza"));
             Assert.AreEqual("et", VeryEasyProgram.FirstLastCharacter("edabit"));
             Assert.AreEqual("as", VeryEasyProgram.FirstLastCharacter("always"));
+        }
+
+        [Test]
+        public void FormatDateYYYYDDMMTest()
+        {
+            Assert.AreEqual("20191211", VeryEasyProgram.FormatDateYYYYDDMM("11/12/2019"));
+            Assert.AreEqual("20193112", VeryEasyProgram.FormatDateYYYYDDMM("12/31/2019"));
+            Assert.AreEqual("20191501", VeryEasyProgram.FormatDateYYYYDDMM("01/15/2019"));
+        }
+
+        [Test]
+        public void AverageTest()
+        {
+            Assert.AreEqual(2.55, VeryEasyProgram.Average(new int[] { 1, 0, 4, 5, 2, 4, 1, 2, 3, 3, 3 }));
+            Assert.AreEqual(2849.25, VeryEasyProgram.Average(new int[] { 324, 543, 654, 9876 }));
+            Assert.AreEqual(0.8, VeryEasyProgram.Average(new int[] { 1, 1, 0, 1, 2, 1, 1, 1, 0, 0 }));
+            Assert.AreEqual(10000.0, VeryEasyProgram.Average(new int[] { 10000 }));
         }
     }
 }
