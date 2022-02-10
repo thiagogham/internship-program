@@ -7,7 +7,7 @@ namespace InternshipProgramTests.VeryEasy
     public class VeryEasyTests
     {
         [Test]
-        public void FixedTest()
+        public void ReturnTrueTest()
         {
             Assert.IsTrue(VeryEasyProgram.ReturnTrue());
         }
