@@ -9,7 +9,7 @@ namespace InternshipProgram.VeryEasy
         /// </summary>
         public static bool ReturnTrue()
         {
-            throw new NotImplementedException();
+            return true;
         }
         
         /// <summary>
@@ -17,7 +17,9 @@ namespace InternshipProgram.VeryEasy
         /// </summary>
         public static int Sum(int a, int b)
         {
-            throw new NotImplementedException();
+            int sum = a + b;
+
+            return sum;
         }
         
         /// <summary>
@@ -25,7 +27,9 @@ namespace InternshipProgram.VeryEasy
         /// </summary>
         public static int ConverMinutesToSeconds(int minutes)
         {
-            throw new NotImplementedException();
+            int seconds = minutes * 60;
+            
+            return seconds;
         }
         
         /// <summary>
@@ -33,7 +37,14 @@ namespace InternshipProgram.VeryEasy
         /// </summary>
         public static bool DivisibleByFive(int number)
         {
-            throw new NotImplementedException();
+            int rest = number % 5;
+
+            if (rest == 0)
+            {
+                return true;
+            }
+
+            return false;
         }
         
         /// <summary>
@@ -41,7 +52,31 @@ namespace InternshipProgram.VeryEasy
         /// </summary>
         public static int Calculate(int num1, int num2, string operation)
         {
-            throw new NotImplementedException();
+            if (operation == "+")
+            {
+                int result = num1 + num2;
+                return result;
+            } 
+            else if (operation == "-")
+            {
+                int result = num1 - num2;
+                return result;
+            }
+            else if (operation == "*")
+            {
+                int result = num1 * num2;
+                return result;
+            }
+            else if (operation == "/")
+            {
+                int result = num1 / num2;
+                return result;
+            }
+            else
+            {
+                int result = num1 % num2;
+                return result;
+            }
         }
         
         /// <summary>
@@ -49,7 +84,18 @@ namespace InternshipProgram.VeryEasy
         /// </summary>
         public static int[] Reverse(int[] array)
         {
-            throw new NotImplementedException();
+            int[] reverse = new int[array.Length];
+            int count = 0;
+            int i = array.Length - 1;
+
+            while (count < array.Length)
+            {
+                reverse[count] = array[i];
+                count++;
+                i--;
+            }
+
+            return reverse;
         }
         
         /// <summary>
