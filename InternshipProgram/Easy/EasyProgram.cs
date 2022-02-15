@@ -22,5 +22,40 @@ namespace InternshipProgram.Easy
         {
             throw new NotImplementedException();
         }
+
+        /// <summary>
+        /// Create a function that takes a DateTime and returns its corresponding month name as a string. 
+        /// For example, if you're given 03-01-2021 as input, your function should return "March", because March is the 3rd month.
+        /// </summary>
+        public static string MonthName(DateTime date)
+        {
+            throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// Create a function that takes an array of items, removes all duplicate items and 
+        /// returns a new array in the same sequential order as the old array (minus duplicates).
+        /// </summary>
+        public static object[] RemoveDuplicates(object[] array)
+        {
+            throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// Create a function that takes an array of numbers between 1 and 10 (excluding one number) and returns the missing number.
+        /// </summary>
+        public static int MissingNumberTests(int[] array)
+        {
+            throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// Create a function that takes an array of numbers and returns an array where 
+        /// each number is the sum of itself + all previous numbers in the array.
+        /// </summary>
+        public static double[] CumulativeSum(double[] array)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
